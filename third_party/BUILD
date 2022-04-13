@@ -9,3 +9,16 @@ cc_library(
   copts = ["-I third_party/tgbot/include", "-std=c++20"],
   linkopts = ["-lboost_system -lssl -lcrypto -lpthread"],
 )
+
+
+cc_library(
+  name = "curlcpp",
+  srcs = glob(["curlcpp/src/**/*.cpp"]),
+  hdrs = glob([
+    "curlcpp/include/**/*.h",
+  ]),
+  strip_include_prefix = "curlcpp/include",
+  visibility = ["//visibility:public"],
+  copts = ["-I third_party/curlpp/include"],
+  linkopts = ["-lcurl"],
+)

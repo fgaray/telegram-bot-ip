@@ -1,3 +1,6 @@
 [submodule "third_party/tgbot-cpp"]
 	path = third_party/tgbot-cpp
 	url = https://github.com/reo7sp/tgbot-cpp
+[submodule "third_party/curlcpp"]
+	path = third_party/curlcpp
+	url = https://github.com/JosephP91/curlcpp.git
